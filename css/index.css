@@ -26,3 +26,7 @@ body {
     line-height: 60px;
     background-color: pink;
 }
+
+h1, h2, p {
+    color: white;
+}

@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap Example</title>
+    <title>Valentine's Day</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
 <nav class="navbar navbar-expand-md navbar-light fixed-top">
     <a class="navbar-brand" href="#">Valentine's Day</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -30,7 +29,6 @@
         </ul>
     </div>
 </nav>
-
 <main role="main" class="container">
     <div class="template">
         <h1>Welcome to the Official Valentine's Day Page!</h1>
@@ -39,15 +37,17 @@
         <img src="images/img.jpg" class="img-fluid" alt="Image">
     </div>
 </main>
-
 <footer class="footer">
     <div class="container text-center">
-        <span class="text-muted">&copy; 2018, Salamon Andor</span>
+        <span class="text-muted" id="date"></span>
     </div>
 </footer>
-
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    let today = new Date();
+    document.getElementById("date").innerHTML = "&copy; " + today.getFullYear() + ", Andor Salamon";
+</script>
 </body>
 </html>
